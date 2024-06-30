@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Trotting</title>
+</head>
+<body>
+    <script>
+       document.addEventListener("click", horseMade);
+       function horseMade(event){
+        var horse = document.createElement("img");
+        horse.src = "./img/horse.webp";
+        horse.style.position ="absolute";
+
+        horse.style.left =event.clientX + 'px';
+        horse.style.top =event.clientY + 'px';
+
+        document.body.appendChild(horse);
+
+       };
+    </script>
+</body>
+</html>
